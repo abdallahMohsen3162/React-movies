@@ -18,7 +18,7 @@ const App = () => {
         console.log(movies);
       }, []);
 
-    const searchMovies = async (title) => {
+    const searchMovies = (title) => {
         fetch(`http://www.omdbapi.com/?apikey=aff87530&&s=${title}`)
         .then((res)=>res.json())
         .then((data)=>{
